@@ -1,0 +1,41 @@
+.c-article {
+  background-color: #999;
+  display: flex;
+}
+
+.c-article__thumb {
+  margin-right: 10px;
+}
+
+.c-article__detail {
+  padding: 10px 0;
+}
+
+.c-article__title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.c-article__info {
+  font-family: "Roboto-Regular";
+  font-size: 10px;
+}
+
+.c-article__text {
+  font-size: 12px;
+  line-height: 2.0;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 796px) { /* pc */
+  .c-article__info span {
+    color: #0ff;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp */
+  .c-article__info span {
+    color: #ff0;
+  }
+}

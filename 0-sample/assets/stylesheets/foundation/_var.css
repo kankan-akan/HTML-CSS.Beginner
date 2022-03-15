@@ -1,0 +1,27 @@
+/*
+  cssで使う変数や、レスポンシブ対応の際のブレークポイントを定義しておくファイル
+  コンパイル環境でないと使用できないので、現状は不要のためコメントアウトしています（仕様はなんとなく理解しておくとよいかも）
+ */
+
+/* breakpoint
+$breakSP: 795;
+$breakpoints: (
+  'sp': 'print, screen and (max-width: #{$breakSP}px)',
+  'pc': 'print, screen and (min-width: #{$breakSP + 1}px)',
+) !default;
+@mixin mq($breakpoint) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}
+
+ PATH
+$bgPath: '../../assets/images/';
+
+ COLOR
+$colorLight: #3cabe0;
+$colorNormal: #2496cd;
+$colorDark: #012c45;
+$colorBlack: #222;
+$colorGray: #666;
+$colorWhite: #fff;

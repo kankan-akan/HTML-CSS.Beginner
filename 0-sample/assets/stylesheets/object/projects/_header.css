@@ -1,0 +1,10 @@
+.p-header {
+}
+
+.p-header__nav {
+  color: #f0f;
+}
+
+.p-header__nav li.is-scrolled {
+  color: #f00;
+}

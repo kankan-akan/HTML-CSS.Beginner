@@ -1,0 +1,24 @@
+/*
+  utilityクラスを記述するファイル
+  詳細はコーディング規約（ID・CLASS）にて
+  ※本来はvarで定義した、ブレークポイントによるレスポンシブ対応（mq()）となるが,
+  カリキュラム（入門）では画面幅によって分けて記述する方法をとる
+ */
+
+.u-hidden { display: none !important; }
+
+@media screen and (min-width: 796px) { /* pc */
+  .u-hidden-pc {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp */
+  .u-hidden-sp {
+    display: none !important;
+  }
+}
+
+.u-mb-10 { margin-bottom: 10px !important; }
+
+
