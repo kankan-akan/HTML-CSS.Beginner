@@ -1,11 +1,73 @@
 /* 共通スタイルは外に書く */
+.l-header {
+  height: 100px;
+}
+
+.l-sidebar {
+  height: 250px;
+}
+
+.l-mainContent {
+  height: 250px;
+}
+
+.l-footer {
+  height: 100px;
+}
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
-
+  .l-header {
+    margin: auto;
+    width: 400px;
+    background-color: #141f40;
+  }
+  
+  .l-main__flexbox {
+    width: 400px;
+    margin: auto;
+    display: flex;
+  }
+  
+  .l-sidebar {
+    width: 150px;
+    background-color: #80bfa8;
+  }
+  
+  .l-mainContent {
+    width: 250px;
+    background-color: #8c2727;
+  }
+  
+  .l-footer {
+    margin: auto;
+    width: 400px;
+    background-color: #d98d30;
+    clear: both;
+  }
 
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-header {
+    background-color: #e91e63;
+  }
 
+  .l-main__flexbox {
+    display: block;
+  }
+
+  .l-sidebar {
+    width: 100%;
+    background-color: #0093b7;
+  }
+
+  .l-mainContent {
+    width: 100%;
+    background-color: #dbd400;
+  }
+
+  .l-footer {
+    background-color: #170e38;
+  }
 
 }
