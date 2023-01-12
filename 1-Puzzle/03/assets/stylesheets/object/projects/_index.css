@@ -1,0 +1,158 @@
+/* 共通スタイルは外に書く */
+.l-header {
+  padding: 20px 40px;
+}
+.l-sidebar {
+  padding: 20px;
+}
+.l-sidebar__title {
+  color: #f00;
+}
+.p-sidebar-content {
+  margin-top: 20px;
+}
+.c-sidebar-content__paragraph {
+  margin-bottom: 10px;
+}
+.l-mainContent {
+  padding: 20px;
+}
+.p-mainContent__title {
+  color: #00f;
+}
+.p-mainContent__linkList {
+  margin-top: 20px;
+}
+.c-mainContent__link {
+  border:1px solid #d98d30;
+  background-color: #333;
+  color: #fff;
+}
+.p-mainContent__paragraph  {
+  margin-top: 50px;
+}
+.c-mainContent__date {
+  font-family: "Roboto-light";
+}
+.c-mainContent__dateListText {
+  color:  #999;
+}
+.c-mainContent__flex {
+  margin-top: 10px;
+}
+.l-footer {
+  height: 100px;
+  padding: 20px 40px;
+}
+.p-footer__title {
+  color: #0f0;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-body {
+    width: 100%;
+    margin: auto;
+  }
+  .l-header {
+    background-color: #141f40;
+  }
+  .p-header-image {
+    width: 100px;
+  }
+  .l-main__flexbox {
+    display: flex;
+  }
+  .l-sidebar {
+    height: 100%;
+    background-color: #80bfa8;
+  }
+  .l-sidebar__title {
+    font-size: 25px;
+  }
+  .p-sidebar-content {
+    font-size: 18px;
+  }
+  .c-sidebar-content__text {
+    font-size: 10px;
+  }
+  .l-mainContent {
+    width: 100%;
+    background-color: #8c2727;
+  }
+  .p-mainContent__title {
+    font-size: 20px;
+  }
+  .c-mainContent__link {
+    margin-right: 20px;
+    padding: 5px 30px;
+  }
+  .c-mainContent__dateListText {
+    font-size: 18px;
+  }
+  .l-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d98d30;
+  }
+  .p-footer__lavel {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-header {
+    background-color: #e91e63;
+  }
+  .p-header-image {
+    width: 50px;
+  }
+  .l-sidebar {
+    background-color: #0093b7;
+  }
+  .l-sidebar__title {
+    font-size: 20px;
+  }
+  .p-sidebar-content {
+    font-size: 13px;
+  }
+  .c-sidebar-content__text {
+    font-size: 30px;
+  }
+  .l-mainContent {
+    background-color: #dbd400;
+  }
+  .p-mainContent__title {
+    font-size: 10px;
+  }
+  .p-mainContent__linkList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .c-mainContent__link {
+    display: inline-block;
+    width: 30%;
+    padding: 5px 0;
+    text-align: center;
+  }
+  .c-mainContent__flex {
+    display: flex;
+    align-items: center;
+  }
+  .c-mainContent__date {
+    margin-right: 20px;
+  }
+  .c-mainContent__dateListText {
+    font-size: 13px;
+  }
+  .l-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #170e38;
+  }
+  .p-footer__label {
+    font-size: 13px;
+    color: #fff;
+  }
+}
