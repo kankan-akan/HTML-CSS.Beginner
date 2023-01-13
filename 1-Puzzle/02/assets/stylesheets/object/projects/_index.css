@@ -29,12 +29,16 @@
     width: 150px;
     font-size: 20px;
     background-color: #80bfa8;
+  }
+  .l-sidebar__title {
     color: #f00;
   }
   .l-mainContent {
     width: 250px;
     font-size: 20px;
     background-color: #8c2727;
+  }
+  .l-mainContent__title {
     color: #00f;
   }
   .l-footer {
@@ -49,11 +53,15 @@
   .l-sidebar {
     font-size: 15px;
     background-color: #0093b7;
+  }
+  .l-sidebar__title {
     color: #00f;
   }
   .l-mainContent {
     font-size: 15px;
     background-color: #dbd400;
+  }
+  .l-mainContent__title {
     color: #f00;
   }
   .l-footer {
