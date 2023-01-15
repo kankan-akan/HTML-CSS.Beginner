@@ -11,33 +11,31 @@
 .p-sidebar-content {
   margin-top: 20px;
 }
-.c-sidebar-content__paragraph {
-  margin-bottom: 10px;
-}
 .l-mainContent {
   padding: 20px;
 }
 .p-mainContent__title {
   color: #00f;
 }
-.p-mainContent__linkList {
+ul.p-mainContent__link {
   margin-top: 20px;
+  list-style-type: none;
 }
-.c-mainContent__link {
+.p-mainContent__link li {
   border:1px solid #d98d30;
   background-color: #333;
   color: #fff;
 }
-.p-mainContent__paragraph  {
+.p-mainContent__paragraph {
   margin-top: 50px;
 }
-.c-mainContent__date {
-  font-family: "Roboto-light";
+.p-mainContent__date {
+  font-family: "Roboto-Light";
 }
-.c-mainContent__dateListText {
+.p-mainContent__dateListText {
   color:  #999;
 }
-.c-mainContent__flex {
+.p-mainContent__flex {
   margin-top: 10px;
 }
 .l-footer {
@@ -72,7 +70,7 @@
   .p-sidebar-content {
     font-size: 18px;
   }
-  .c-sidebar-content__text {
+  .p-sidebar-content__text {
     font-size: 10px;
   }
   .l-mainContent {
@@ -82,11 +80,16 @@
   .p-mainContent__title {
     font-size: 20px;
   }
-  .c-mainContent__link {
-    margin-right: 20px;
+  .p-mainContent__link li {
+    display:inline-block;
+  }
+  .p-mainContent__link li + li {
+    margin-left: 20px; 
+  }
+  .p-mainContent__link li a {
     padding: 5px 30px;
   }
-  .c-mainContent__dateListText {
+  .p-mainContent__dateListText {
     font-size: 18px;
   }
   .l-footer {
@@ -116,7 +119,7 @@
   .p-sidebar-content {
     font-size: 13px;
   }
-  .c-sidebar-content__text {
+  .p-sidebar-content__text {
     font-size: 30px;
   }
   .l-mainContent {
@@ -125,24 +128,25 @@
   .p-mainContent__title {
     font-size: 10px;
   }
-  .p-mainContent__linkList {
+  .p-mainContent__link {
     display: flex;
     justify-content: space-between;
   }
-  .c-mainContent__link {
-    display: inline-block;
+  .p-mainContent__link li {
     width: 30%;
-    padding: 5px 0;
     text-align: center;
   }
-  .c-mainContent__flex {
+  .p-mainContent__link li a {
+    padding: 5px 0;
+  }
+  .p-mainContent__flex {
     display: flex;
     align-items: center;
   }
-  .c-mainContent__date {
+  .p-mainContent__date {
     margin-right: 20px;
   }
-  .c-mainContent__dateListText {
+  .p-mainContent__dateListText {
     font-size: 13px;
   }
   .l-footer {
