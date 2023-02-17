@@ -36,7 +36,7 @@
   list-style-type: none;
 }
 
-.p-mainContent__link {
+.p-mainContent__linkItem {
   border:1px solid #d98d30;
   background-color: #333;
   color: #fff;
@@ -105,11 +105,11 @@
     font-size: 20px;
   }
 
-  .p-mainContent__link + .p-mainContent__link {
+  .p-mainContent__linkItem + .p-mainContent__linkItem {
     margin-left: 20px;
   }
 
-  .p-mainContent__linkItem {
+  .p-mainContent__link {
     padding: 5px 30px;
   }
 
@@ -166,12 +166,12 @@
     justify-content: space-between;
   }
 
-  .p-mainContent__link {
+  .p-mainContent__linkItem {
     width: 30%;
     text-align: center;
   }
 
-  .p-mainContent__linkItem {
+  .p-mainContent__link {
     padding: 5px 0;
   }
 
