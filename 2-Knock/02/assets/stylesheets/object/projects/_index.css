@@ -1,0 +1,93 @@
+/* 共通スタイルは外に書く */
+.c-content {
+  margin: 0 auto;
+}
+
+.p-content__main {
+  border-top: 1px solid #000;
+}
+
+
+
+.c-content__text {
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-content__header {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .p-content__main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .c-content__order1 {
+    order: 2;
+    margin-left: 30px;
+  }
+
+  .c-content__order2 {
+    order: 1;
+  }
+
+  .c-content {
+    display: flex;
+    padding: 30px;
+  }
+
+  .c-image {
+    max-height: 300px;
+  }
+
+  .c-content__textWrap {
+    margin-left: 30px;
+  }
+
+  .c-content__title {
+    font-size: 35px;
+  }
+
+  .c-content__text {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-content__header {
+    padding: 25px;
+  }
+
+  .p-content__main {
+    padding: 25px;
+  }
+
+  .c-content {
+    text-align: center;
+  }
+
+  .c-content + .c-content {
+    margin-top: 25px;
+  }
+
+  .c-image {
+    margin: 0 auto;
+  }
+
+  .c-content__title {
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .c-content__text {
+    margin-top: 25px;
+    font-size: 13px;
+  }
+
+  .c-image__header {
+    width: 100%;
+    max-width: 400px;
+  }
+}
