@@ -28,7 +28,7 @@
 }
 
 .p-content__text--space {
-  margin-top: 65px;
+  min-height: 90px;
 }
 
 .p-content__column3 + .p-content__column3 {
