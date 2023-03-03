@@ -8,36 +8,35 @@
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
-  .p-content__header {
+  .l-main {
     max-width: 1100px;
     margin: 0 auto;
+  }
+
+  .p-content__header {
+    padding: 30px;
   }
 
   .p-content__main {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .c-content__order1 {
-    order: 2;
-    margin-left: 30px;
-  }
-
-  .c-content__order2 {
-    order: 1;
+    padding: 30px;
   }
 
   .c-content {
     display: flex;
-    padding: 30px;
+    gap: 30px;
+  }
+
+  .c-content + .c-content {
+    margin-top: 30px;
+  }
+
+  .c-content:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .c-image {
     max-height: 300px;
-  }
-
-  .c-content__textWrap {
-    margin-left: 30px;
   }
 
   .c-content__title {
