@@ -35,17 +35,13 @@
     flex-direction: row-reverse;
   }
 
-  .c-image {
-    max-height: 300px;
-  }
-
   .c-content__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .c-content__text {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
