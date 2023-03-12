@@ -35,6 +35,10 @@
     flex-direction: row-reverse;
   }
 
+  .c-image {
+    max-height: 220px;
+  }
+
   .c-content__title {
     font-size: 30px;
   }
