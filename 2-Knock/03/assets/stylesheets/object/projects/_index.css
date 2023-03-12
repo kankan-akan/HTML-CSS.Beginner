@@ -30,6 +30,10 @@
   text-decoration: underline;
 }
 
+.p-company__businessWrap + .p-company__businessWrap {
+  margin-top: 30px;
+}
+
 .p-company__color {
   color: #4000ff
 }
@@ -40,10 +44,6 @@
 
 .p-company__wrap {
   word-break: break-all;
-}
-
-.p-company__web {
-  margin-top: 30px;
 }
 
 .p-company__ad {
