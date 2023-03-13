@@ -1,12 +1,12 @@
 /* 共通スタイルは外に書く */
-.l-main {
+.p-company {
   max-width: 850px;
   margin: 0 auto;
   padding: 25px 20px;
   border: 1px solid #000;
 }
 
-.p-company + .p-company {
+.p-company__list + .p-company__list {
   margin-top: 40px;
 }
 
@@ -26,7 +26,7 @@
   margin-top: 10px;
 }
 
-.p-company__underLine {
+.p-company__businessItem {
   text-decoration: underline;
 }
 
@@ -38,12 +38,13 @@
   color: #4000ff
 }
 
-.p-company__map {
-  font-size: 14px;
+.p-company__link {
+  display: block;
+  margin-top: 15px;
 }
 
-.p-company__wrap {
-  word-break: break-all;
+.p-company__map {
+  font-size: 14px;
 }
 
 .p-company__ad {
@@ -54,9 +55,12 @@
   margin-top: 25px;
 }
 
+.p-company__nameWrap {
+  word-break: break-all;
+}
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
-  .p-company {
+  .p-company__list {
     display: flex;
   }
 
