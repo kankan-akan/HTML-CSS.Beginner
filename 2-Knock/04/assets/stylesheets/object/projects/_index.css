@@ -1,11 +1,101 @@
 /* 共通スタイルは外に書く */
+.l-main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.l-main__main {
+  border-top: solid 1px #000;
+}
+
+.c-content__image {
+  width: 300px;
+  height: 200px;
+}
+
+.c-content__textWrap {
+  padding: 40px 30px;
+  background-color: rgb(233, 233, 233);
+}
+
+.c-contetnt__title {
+  font-size: 25px;
+}
+
+.c-content__text {
+  font-size: 12px;
+}
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-main__header {
+    padding: 20px 0 80px 0;
+  }
 
+  .l-main__main {
+    padding: 20px 0 80px 0;
+  }
 
+  .c-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .c-content:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .c-content + .c-content {
+    margin-top: 100px;
+  }
+
+  .c-content__image {
+    position: relative;
+    left: 14%;
+    z-index: -1;
+  }
+
+  .c-content__image--reverse {
+    position: relative;
+    right: 14%;
+    z-index: -1;
+    width: 300px;
+    height: 200px;
+  }
+
+  .c-content__textWrap {
+    position: relative;
+    width: 50%;
+    top: 40px;
+    right: 14%;
+  }
+
+  .c-content__textWrap--reverse {
+    left: 14%;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-main__header{
+    padding: 30px 40px;
+  }
 
+  .l-main__main {
+    padding: 30px 40px;
+  }
 
+  .c-content + .c-content {
+    margin-top: 40px;
+  }
+
+  .c-content__image {
+    margin: 0 auto;
+  }
+
+  .c-content__image--reverse {
+    margin: 0 auto;
+  }
+
+  .c-content__textWrap {
+    margin-top: 20px;
+  }
 }
