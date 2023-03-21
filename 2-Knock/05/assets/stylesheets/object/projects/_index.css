@@ -1,11 +1,118 @@
-/* 共通スタイルは外に書く */
-
-@media screen and (min-width: 796px) { /* pc用スタイル */
-
-
+.l-main__container {
+  padding: 35px;
 }
 
-@media screen and (max-width: 795px) { /* sp用スタイル */
+.l-main__container + .l-main__container {
+  border-top: 1px solid #000;
+}
+
+.l-main__link {
+  position: relative;
+  color: #0000ff;
+}
+
+.l-main__link::after {
+  content: url(../../../images/common/link.png);
+  transform: scale(0.25);
+  position: absolute;
+  top: -20px;
+  left: 105px;
+}
+
+.l-main__arrowWrap {
+  margin-top: 40px;
+}
+
+.l-main__arrow {
+  display: inline-block;
+  color: #ff0000;
+}
+
+.l-main__arrow + .l-main__arrow {
+  margin-left: 50px;
+}
+
+.l-main__arrow::after {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  content: '';
+  background-image: url(../../../images/common/arrow.png);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.l-main__border {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #c9c9f24d;
+  color: #20377a;
+  font-size: 25px;
+}
+
+.l-main__border::before {
+  position: absolute;
+  width: 32px;
+  height: 1.5px;
+  background-color: #a4a4edd3;
+  content: '';
+  top: 42px;
+}
+
+.l-main__border--center {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.l-main__border--center::after {
+  position: absolute;
+  width: 30px;
+  height: 3.5px;
+  background-color: #ff44c7;
+  content: '';
+  top: 65px;
+  left: 48.5%;
+}
+
+.l-main__balloon {
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #dedede;
+  color: rgb(55, 54, 54);
+  font-weight: bold;
+}
+
+.l-main__balloon::after {
+  position: absolute;
+  border: 15px solid transparent;
+  border-top: 20px solid #dedede;
+  content: '';
+  top: 100%;
+  left: 45%;
+}
 
 
+.l-main__floatWrap::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.l-main__float {
+  float: left;
+  font-weight: bold;
+  color: rgb(56, 56, 56);
+}
+
+.l-main__float + .l-main__float {
+  margin-left: 30px;
 }
