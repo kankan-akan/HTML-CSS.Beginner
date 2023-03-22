@@ -1,4 +1,12 @@
-.u-hidden { display: none !important; }
+.u-hidden {
+  display: none !important;
+}
+
+.u-clearFix::after {
+  display: block;
+  clear: both;
+  content: '';
+}
 
 @media screen and (min-width: 796px) { /* pc */
   .u-hidden-pc {

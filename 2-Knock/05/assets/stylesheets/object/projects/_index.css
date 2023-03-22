@@ -7,16 +7,21 @@
 }
 
 .l-main__link {
-  position: relative;
+  display: inline-block;
   color: #0000ff;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .l-main__link::after {
-  content: url(../../../images/common/link.png);
-  transform: scale(0.25);
-  position: absolute;
-  top: -20px;
-  left: 105px;
+  display: inline-block;
+  position: relative;
+  width: 13px;
+  height: 13px;
+  content: '';
+  background-image: url(../../../images/common/link.png);
+  background-size: contain;
+  vertical-align: bottom;
 }
 
 .l-main__arrowWrap {
@@ -35,13 +40,13 @@
 .l-main__arrow::after {
   display: inline-block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   left: 5px;
   content: '';
   background-image: url(../../../images/common/arrow.png);
   background-size: contain;
-  vertical-align: middle;
+  vertical-align: sub;
 }
 
 .l-main__border {
@@ -98,13 +103,6 @@
   content: '';
   top: 100%;
   left: 45%;
-}
-
-
-.l-main__floatWrap::after {
-  display: block;
-  clear: both;
-  content: '';
 }
 
 .l-main__float {
