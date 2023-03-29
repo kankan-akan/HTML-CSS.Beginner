@@ -1,0 +1,50 @@
+.l-footer {
+  background-color: #d98d30;
+}
+
+.l-footer__copyright {
+  font-size: 12px;
+}
+
+.l-footer__item {
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 40px;
+  }
+
+  .l-footer__item {
+    display: inline-block;
+  }
+
+  .l-footer__item + .l-footer__item {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-footer {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .l-footer__list {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .l-footer__item + .l-footer__item{
+    margin-top: 10px;
+  }
+
+  .l-footer__copyright {
+    margin-top: 40px;
+  }
+}

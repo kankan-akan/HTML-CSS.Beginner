@@ -1,0 +1,46 @@
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141f40;
+}
+
+.l-header__item {
+  display: inline-block;
+  color: white;
+}
+
+.l-header__item + .l-header__item {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-header {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-header {
+    padding: 15px 30px;
+  }
+
+  .l-header__hamburger,
+  .l-header__hamburger::before,
+  .l-header__hamburger::after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 25px;
+    background-color: white;
+    position: relative;
+  }
+
+  .l-header__hamburger::before {
+    bottom: 7px;
+  }
+
+  .l-header__hamburger::after {
+    top: 6px;
+  }
+}

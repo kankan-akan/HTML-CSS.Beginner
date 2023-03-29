@@ -1,0 +1,11 @@
+.p-mainContent {
+  width: 100%;
+  padding: 20px 35px;
+  background-color: #8c2727;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-mainContent__title {
+    font-size: 20px;
+  }
+}

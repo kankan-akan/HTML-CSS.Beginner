@@ -1,0 +1,26 @@
+.p-sidebar {
+  height: 100%;
+  background-color: #80bfa8;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-sidebar {
+    width: 300px;
+    padding: 20px 15px;
+    font-weight: bold;
+  }
+
+  .p-sidebar__text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-sidebar {
+    padding: 40px 35px;
+  }
+
+  .p-sidebar__text {
+    margin-top: 10px;
+  }
+}
