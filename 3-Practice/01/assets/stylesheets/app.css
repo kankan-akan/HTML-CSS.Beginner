@@ -11,9 +11,13 @@
 // Layout
 // ==========================================================================*/
 
-@import 'layout/_header.css';
+@import 'layout/_aside.css';
+@import 'layout/_content.css';
 @import 'layout/_footer.css';
+@import 'layout/_header.css';
 @import 'layout/_main.css';
+@import 'layout/_sidebar.css';
+
 
 
 /*// ==========================================================================
@@ -31,7 +35,6 @@
 
 @import 'object/projects/_article.css';
 @import 'object/projects/_mainContent.css';
-@import 'object/projects/_sidebar.css';
 
 /*// -----------------------------------------------------------------
 // Utility

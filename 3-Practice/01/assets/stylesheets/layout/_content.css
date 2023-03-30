@@ -1,0 +1,5 @@
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-content {
+    display: flex;
+  }
+}

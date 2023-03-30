@@ -6,11 +6,6 @@
   font-size: 12px;
 }
 
-.l-footer__item {
-  font-weight: bold;
-}
-
-
 @media screen and (min-width: 796px) { /* pc用スタイル */
   .l-footer {
     display: flex;
@@ -40,9 +35,9 @@
     vertical-align: middle;
   }
 
-  .l-footer__item + .l-footer__item{
+  .l-footer__item + .l-footer__item {
     margin-top: 10px;
-  }
+  } 
 
   .l-footer__copyright {
     margin-top: 40px;

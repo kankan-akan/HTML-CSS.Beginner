@@ -1,5 +1,3 @@
-@media screen and (min-width: 796px) { /* pc用スタイル */
-  .l-main {
-    display: flex;
-  }
+.l-main {
+  width: 75%;
 }
