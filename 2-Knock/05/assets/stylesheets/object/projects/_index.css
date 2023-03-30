@@ -21,7 +21,7 @@
   content: '';
   background-image: url(../../../images/common/link.png);
   background-size: contain;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .l-main__arrowWrap {
