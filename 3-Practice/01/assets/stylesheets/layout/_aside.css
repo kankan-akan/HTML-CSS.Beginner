@@ -1,3 +1,5 @@
-.l-aside {
-  width: 25%;
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-aside {
+    width: 25%;
+  }
 }

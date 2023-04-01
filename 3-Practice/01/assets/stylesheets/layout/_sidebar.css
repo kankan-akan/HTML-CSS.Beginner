@@ -6,7 +6,6 @@
 @media screen and (min-width: 796px) { /* pc用スタイル */
   .l-sidebar {
     padding: 20px 15px;
-    font-weight: bold;
   }
 
   .l-sidebar__wrap {

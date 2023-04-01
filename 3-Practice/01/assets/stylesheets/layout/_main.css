@@ -1,3 +1,5 @@
-.l-main {
-  width: 75%;
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-main {
+    width: 75%;
+  }
 }
