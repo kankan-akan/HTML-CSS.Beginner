@@ -1,0 +1,88 @@
+.l-footer__textWrap {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.l-footer__title {
+  color: rgb(83, 83, 83);
+}
+
+.l-footer__text {
+  color: rgb(83, 83, 83);
+  margin: 30px 0;
+}
+
+.l-footer__textWrap::after {
+  display: block;
+  margin: 0 auto;
+  content: '';
+  height: 2px;
+  width: 80px;
+  background-color: gold;
+}
+
+.l-footer__listWrap {
+  margin-top: 30px;
+}
+
+.l-footer__listTitle {
+  margin-top: 15px;
+  font-size: 20px;
+  color: rgb(83, 83, 83);
+}
+
+.l-footer__listText {
+  margin-top:20px;
+  color: rgb(119, 118, 118);
+}
+
+.l-footer__button {
+  margin-top: 40px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 200, 0);
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-footer {
+    padding: 50px 40px;
+  }
+
+  .l-footer__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .l-footer__list + .l-footer__list {
+    margin-top: 50px;
+  }
+
+  .l-footer__list:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .l-footer__list:nth-child(even) .l-footer__contentWrap {
+    text-align: right;
+  }
+
+  .l-footer__image {
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 795px) { /*sp用スタイル */
+  .l-footer {
+    padding: 50px 15px;
+  }
+
+  .l-footer__list {
+    margin-top: 35px;
+  }
+
+  .l-footer__button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.l-header {
+  padding: 10px 20px;
+  background-image: url(../../../assets/images/common/hero.jpg);
+  height: 800px;
+}
+
+.l-header__image {
+  height: 50px;
+  width: 50px;
+}
+
+.l-header__listWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l-header__listItem {
+  display: inline-block;
+  color: white;
+}
+
+.l-header__listItem + .l-header__listItem {
+  margin-left: 30px;
+}
+
+.l-header__title {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 45%;
+  font-size: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-header__hamburger,
+  .l-header__hamburger::before,
+  .l-header__hamburger::after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 25px;
+    background-color: white;
+    position: relative;
+  }
+
+  .l-header__hamburger::before {
+    bottom: 7px;
+  }
+
+  .l-header__hamburger::after {
+    top: 6px;
+  }
+}
