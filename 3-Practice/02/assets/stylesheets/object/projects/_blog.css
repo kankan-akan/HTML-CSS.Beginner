@@ -1,26 +1,6 @@
-.p-blog__titleWrap {
-  padding-top: 30px;
-  text-align: center;
-}
-
-.p-blog__titleWrap::after {
-  position: relative;
-  display: block;
+.p-blog {
   margin: 0 auto;
-  content: '';
-  height: 2px;
-  width: 80px;
-  top: 30px;
-  background-color: gold;
-}
-
-.p-blog__title {
-  color: rgb(83, 83, 83);
-}
-
-.p-blog__subtitle {
-  margin-top: 30px;
-  color: rgb(83, 83, 83);
+  max-width: 1280px;
 }
 
 .p-blog__listWrap {
@@ -40,6 +20,7 @@
 }
 
 .p-blog__button {
+  display: inline-block;
   margin-top: 40px;
   padding: 13px;
   border: none;
@@ -87,5 +68,6 @@
 
   .p-blog__button {
     width: 100%;
+    text-align: center;
   }
 }

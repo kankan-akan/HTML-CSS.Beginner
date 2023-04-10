@@ -1,0 +1,24 @@
+.c-heading {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.c-heading::after {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  content: '';
+  height: 2px;
+  width: 80px;
+  top: 30px;
+  background-color: gold;
+}
+
+.c-heading__title {
+  color: rgb(83, 83, 83);
+}
+
+.c-heading__subtitle {
+  margin-top: 30px;
+  color: rgb(119, 118, 118);
+}

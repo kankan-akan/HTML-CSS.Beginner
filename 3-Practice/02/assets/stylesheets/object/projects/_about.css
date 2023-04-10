@@ -2,31 +2,10 @@
   align-content: center;
 }
 
-.p-about__titleWrap {
-  padding-top: 30px;
-  text-align: center;
-  color: rgb(115, 114, 114);
-}
-
-.p-about__titleWrap::after {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  content: '';
-  height: 2px;
-  width: 80px;
-  top: 30px;
-  background-color: gold;
-}
-
-.p-about__subtitle {
-  margin-top: 30px;
-}
-
 .p-about__imageWrap {
   display: grid;
   margin: 70px auto 0;
-  max-width: 1300px;
+  max-width: 1280px;
 }
 
 .p-about__image {
