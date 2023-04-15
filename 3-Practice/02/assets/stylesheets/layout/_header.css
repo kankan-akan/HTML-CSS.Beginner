@@ -1,9 +1,14 @@
 .l-header {
-  margin: 0 auto;
+  position: relative;
   padding: 10px 20px;
   background-image: url(../../../assets/images/common/hero.jpg);
-  max-width: 1280px;
+  background-size: cover;
   height: 800px;
+}
+
+.l-header__container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .l-header__image {
@@ -14,12 +19,11 @@
 .l-header__listWrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .l-header__listItem {
   display: inline-block;
-  color: white;
+  color: #fff;
 }
 
 .l-header__listItem + .l-header__listItem {
@@ -27,24 +31,36 @@
 }
 
 .l-header__title {
-  display: flex;
-  position: relative;
-  text-align: center;
+  margin-top: 350px;
   justify-content: center;
-  top: 45%;
+  text-align: center;
   font-size: 50px;
-  color: white;
+  color: #fff;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-header__listWrap {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-header__listWrap {
+    justify-content: end;
+  }
+
+  .l-header__hamburger {
+    margin-top: 25px;
+  }
+
   .l-header__hamburger,
   .l-header__hamburger::before,
   .l-header__hamburger::after {
     content: '';
     display: block;
-    height: 1.5px;
+    height: 1px;
     width: 25px;
-    background-color: white;
+    background-color: #fff;
     position: relative;
   }
 

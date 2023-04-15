@@ -1,5 +1,4 @@
 .c-heading {
-  padding-top: 30px;
   text-align: center;
 }
 
@@ -11,14 +10,14 @@
   height: 2px;
   width: 80px;
   top: 30px;
-  background-color: gold;
+  background-color: #ffe500;
 }
 
 .c-heading__title {
-  color: rgb(83, 83, 83);
+  color: #696969;
 }
 
 .c-heading__subtitle {
   margin-top: 30px;
-  color: rgb(119, 118, 118);
+  color: #778899;
 }

@@ -5,7 +5,6 @@
 .p-about__imageWrap {
   display: grid;
   margin: 70px auto 0;
-  max-width: 1280px;
 }
 
 .p-about__image {
@@ -14,7 +13,7 @@
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
   .p-about {
-    padding: 50px 40px;
+    padding: 80px 40px;
   }
 
   .p-about__imageWrap {
@@ -58,7 +57,7 @@
 
 @media screen and (max-width: 795px) { /*sp用スタイル */
   .p-about {
-    padding: 50px 15px;
+    padding: 80px 15px;
   }
 
   .p-about__imageWrap {
