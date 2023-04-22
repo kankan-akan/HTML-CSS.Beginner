@@ -49,8 +49,11 @@
     justify-content: end;
   }
 
-  .l-header__hamburger {
+  .l-header__button {
+    height: 25px;
     margin-top: 25px;
+    border: none;
+    background: transparent;
   }
 
   .l-header__hamburger,

@@ -21,7 +21,7 @@
 }
 
 .p-work__listText {
-  margin-top: 30px;
+  margin-top: 20px;
   color: #778899;
 }
 
@@ -45,6 +45,6 @@
   }
 
   .p-work__listItem {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
