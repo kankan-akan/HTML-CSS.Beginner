@@ -1,5 +1,17 @@
 .u-hidden { display: none !important; }
 
+@media screen and (min-width: 1126px) { /* pc 1126px~ */
+  .u-hidden-pc__1126 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1125px) { /* pc ~1125px */
+  .u-hidden-pc__1125 {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 796px) { /* pc */
   .u-hidden-pc {
     display: none !important;

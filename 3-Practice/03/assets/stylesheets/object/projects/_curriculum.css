@@ -1,0 +1,112 @@
+/* 共通スタイルは外に書く */
+.p-curriculum__subtile {
+  margin-top: 20px;
+}
+
+.p-curriculum__imageWrap {
+  width: 874px;
+  height: 560px;
+  overflow: hidden;
+  background-image: url(../../../images/common/sample-2.jpeg);
+}
+
+.p-curriculum__leadingWrap {
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #bb6d00;
+}
+
+@media screen and (min-width: 1126px) {
+  .p-curriculum {
+    margin-top: 150px;
+  }
+
+  .p-curriculum__contentWrap::before {
+    content: "CURRICULUM";
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    font-family: "Montserrat-Bold";
+    font-size: 185px;
+    color: #efefef;
+    overflow: hidden;
+    z-index: -2;
+  }
+
+  .p-curriculum__contentWrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .p-curriculum__titleWrap {
+    margin-left: 100px;
+    max-width: 400px;
+  }
+
+  .p-curriculum__title {
+    font-size: 40px;
+  }
+
+  .p-curriculum__leadingWrap {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 1125px) { /* pc用スタイル */
+  .p-curriculum {
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../images/common/sample-2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .p-curriculum__contentWrap {
+    height: 500px;
+  }
+
+  .p-curriculum__titleWrap {
+    color: #fff;
+  }
+
+  .p-curriculum__title {
+    font-size: 30px;
+  }
+
+  .p-curriculum__subtile {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1125px) and (min-width: 796px) {
+  .p-curriculum__titleWrap {
+    max-width: 80%;
+  }
+
+  .p-curriculum__contentWrap {
+    padding: 150px 100px;
+  }
+}
+
+@media screen and (min-width: 796px) {
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-curriculum__contentWrap {
+    padding: 180px 40px;
+  }
+
+@media screen and (max-width: 375px) {
+  .p-curriculum__contentWrap {
+    padding: 180px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-curriculum__contentWrap {
+    padding: 80px 20px;
+  }
+}
+}
