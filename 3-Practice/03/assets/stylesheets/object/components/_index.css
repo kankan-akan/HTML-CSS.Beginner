@@ -1,0 +1,24 @@
+.c-index {
+  color: #bb6d00;
+}
+
+.c-index__centerBar {
+  margin-right: 45px;
+  position: relative;
+}
+
+.c-index__centerBar::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 0.5px);
+  left: 120%;
+  width: 30px;
+  height: 1px;
+  background-color: #bf7d31;
+}
+
+@media screen and (max-width: 375px) {
+  .c-index {
+    font-size: 10px;
+  }
+}

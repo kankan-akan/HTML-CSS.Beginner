@@ -1,0 +1,100 @@
+.p-ourMessage {
+  margin: 0 40px;
+}
+
+.p-ourMessage__contentWrap {
+  display: flex;
+}
+
+.p-ourMessage__titleWrap {
+  width: 1500px;
+  align-self: center;
+  line-height: 1;
+}
+
+.p-ourMessage__title {
+  margin-left: 30px;
+  font-size: 120px;
+  font-family: "Montserrat-Bold";
+}
+
+.p-ourMessage__leadingTitle {
+  margin-top: 20px;
+}
+
+.p-ourMessage__contents {
+  position: relative;
+  margin-top: 40px;
+}
+
+.p-ourMessage__contents::after {
+  position: absolute;
+  right: 10%;
+  text-align: center;
+  transform: rotate(-10deg);
+  content: "all of the pointer";
+  color: #ffc0cb;
+  font-size: 80px;
+  font-family: 'Brownhill-Script';
+}
+
+.p-ourMessage__text + .p-ourMessage__text {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1126px) {
+  .p-ourMessage__leadingWrap {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 796px) {
+  .p-ourMessage {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-ourMessage {
+    margin-top: 40px;
+  }
+
+  .p-ourMessage__contents::after {
+  font-size: 40px;
+  }
+
+  .p-ourMessage__contentWrap {
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .p-ourMessage__contentWrap::before {
+    content: "OUR MESSAGE";
+    position: absolute;
+    top: 30%;
+    max-width: 250px;
+    font-family: "Montserrat-Bold";
+    font-size: 50px;
+    color: #efefef;
+    z-index: -2;
+  }
+
+  .p-ourMessage__leadingTitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-ourMessage {
+    margin: 40px 20px 0 20px;
+  }
+
+  .p-ourMessage__leadingTitle {
+    font-size: 17px;
+  }
+
+  .p-ourMessage__text {
+    font-size: 15px;
+  }
+}
