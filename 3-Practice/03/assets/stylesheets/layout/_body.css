@@ -1,6 +1,5 @@
 .l-body {
   position: relative;
-  margin: 0 auto;
 }
 
 .l-body::before {
@@ -18,7 +17,7 @@
 
 .l-body::after {
   position: absolute;
-  width: 21%;
+  width: 35%;
   height: 100%;
   content: '';
   top: 0;

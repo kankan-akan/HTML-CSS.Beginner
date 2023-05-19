@@ -4,6 +4,7 @@
 
 .p-ourMessage__contentWrap {
   display: flex;
+  margin: 0 auto;
 }
 
 .p-ourMessage__titleWrap {
@@ -13,7 +14,6 @@
 }
 
 .p-ourMessage__title {
-  margin-left: 30px;
   font-size: 120px;
   font-family: "Montserrat-Bold";
 }

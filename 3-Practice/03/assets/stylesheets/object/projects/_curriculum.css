@@ -1,4 +1,9 @@
 /* 共通スタイルは外に書く */
+.p-curriculum {
+  margin: 0 auto;
+  max-width: 1540px;
+}
+
 .p-curriculum__subtile {
   margin-top: 20px;
 }
@@ -30,7 +35,6 @@
     font-family: "Montserrat-Bold";
     font-size: 185px;
     color: #efefef;
-    overflow: hidden;
     z-index: -2;
   }
 
@@ -39,10 +43,11 @@
     position: relative;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   .p-curriculum__titleWrap {
-    margin-left: 100px;
+    padding-left: 80px;
     max-width: 400px;
   }
 
