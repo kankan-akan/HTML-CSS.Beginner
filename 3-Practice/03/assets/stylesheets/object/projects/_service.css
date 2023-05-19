@@ -1,0 +1,157 @@
+.p-service {
+  margin: 200px 40px;
+}
+
+.p-serviceTop {
+  position: relative;
+  overflow: hidden;
+}
+
+.p-serviceTop::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "Service";
+  font-family: "Montserrat-Bold";
+  font-size: 130px;
+  color: #efefef;
+  z-index: -2;
+}
+
+.p-service__title {
+  margin-top: 30px;
+}
+
+.p-service__leadingWrap {
+  margin-top: 30px;
+  max-width: 850px;
+}
+
+.p-service__imgWrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.p-service__img {
+  min-width: 240px;
+}
+
+.p-serviceBottom {
+  margin-top: 80px;
+}
+
+.p-service__itemTitle {
+  color: #ae8622;
+}
+
+.p-service__itemText {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1125px) {
+  .p-service__itemWrap {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 796px) {
+  .p-service__contentWrap {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .p-service__contentWrap + .p-service__contentWrap {
+    margin-top: 120px;
+  }
+
+  .p-service__img--bottom {
+    position: relative;
+    max-width: 50%;
+    left: 2%;
+    z-index: 2;
+  }
+
+  .p-service__itemWrap {
+    position: relative;
+    right: 2%;
+    top: 100px;
+    padding: 5% 8%;
+    width: 47%;
+    background-color: #f7f7f7;
+    z-index: 1;
+  }
+
+  .p-service__itemTitle {
+    font-size: 18px;
+  }
+
+  .p-service__contentWrap:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .p-service__contentWrap:nth-child(even) .p-service__itemWrap {
+    position: relative;
+    left: 4%;
+    padding: 5% 8%;
+    z-index: 1;
+  }
+
+  .p-service__contentWrap:nth-child(even) .p-service__img--bottom {
+    position: relative;
+    left: -3%;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .p-service__imgWrap {
+    overflow-x: scroll;
+    gap: 2%;
+  }
+
+  .p-service__contentWrap {
+    position: relative;
+  }
+
+  .p-service__contentWrap + .p-service__contentWrap {
+    margin-top: 180px;
+  }
+
+  .p-service__itemWrap {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 95%;
+    padding: 27% 10% 5% 10%;
+    background-color: #f7f7f7;
+    z-index: -1;
+  }
+
+  .p-service__itemTitle {
+    font-size: 22px;
+  }
+
+  .p-service__itemText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-service__contentWrap + .p-service__contentWrap {
+    margin-top: 160px;
+  }
+
+  .p-service__itemTitle {
+    font-size: 13px;
+  }
+
+  .p-service__itemText {
+    font-size: 10px;
+  }
+}
