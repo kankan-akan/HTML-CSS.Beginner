@@ -1,0 +1,146 @@
+.p-benefit {
+  position: relative;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+.p-benefit::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "Benefit";
+  font-family: "Montserrat-Bold";
+  color: #efefef;
+  z-index: -2;
+}
+
+.p-benefit__heading {
+  text-align: center;
+}
+
+.p-benefit__content {
+  text-align: center;
+}
+
+.p-benefit__contentTitle {
+  display: flex;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+  color: #AD7F00;
+  font-weight: 700;
+}
+
+.p-benefit__contentText {
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.p-benefit__contentImg {
+  margin: 0 auto;
+  max-height: 250px;
+  aspect-ratio: 1 / 1;
+}
+
+@media screen and (min-width: 1126px) {
+  .p-benefit__contentTitle {
+    font-size: 16px;
+  }
+
+  .p-benefit__contentText {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .p-benefit__contentTitle {
+    font-size: 10px;
+  }
+
+  .p-benefit__contentText {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 796px) {
+  .p-benefit::before {
+    top: -3%;
+    font-size: 130px;
+  }
+
+  .p-benefit__headingTitle {
+    margin-top: 13px;
+  }
+
+  .p-benefit__headingText {
+    margin-top: 13px;
+  }
+
+  .p-benefit__contentWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 150px;
+  }
+
+  .p-benefit__content {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .p-benefit {
+    margin-top: 60px;
+  }
+
+  .p-benefit::before {
+    top: -1%;
+    font-size: 80px;
+  }
+
+  .p-benefit__heading {
+    padding-top: 15px;
+  }
+
+  .p-benefit__headingTitle {
+    font-size: 4.5vw;
+  }
+
+  .p-benefit__headingText {
+    margin: 0 auto;
+    width: 85%;
+    font-size: 2.5vw;
+  }
+
+  .p-benefit__contentWrap {
+    margin-top: 50px;
+    padding: 0 60px;
+  }
+
+  .p-benefit__content {
+    margin-top: 50px;
+  }
+
+  .p-benefit__contentTitle {
+    font-size: 4.5vw;
+  }
+
+  .p-benefit__contentText {
+    margin-top: 15px;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-benefit::before {
+    top: -3%;
+    font-size: 90px;
+  }
+
+  .p-benefit__heading {
+    padding-top: 20px;
+  }
+
+  .p-benefit__contentImg {
+    max-height: 100px;
+  }
+}
