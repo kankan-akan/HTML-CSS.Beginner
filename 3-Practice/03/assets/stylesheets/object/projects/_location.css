@@ -1,0 +1,68 @@
+.p-location{
+  position: relative;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.p-location::before{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  content: "LOCATION";
+  color: #efefef;
+  font-size: 150px;
+  font-family: "Montserrat-Bold";
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.p-location__content{
+  text-align: center;
+}
+
+.p-location__contentTitle{
+  color: #AD7F00;
+}
+
+.p-location__contentText{
+  margin-top: 10px;
+}
+
+.p-location__map{
+  margin-top: 55px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.p-location__mapItem{
+  width: 900px;
+  height: 400px;
+}
+
+@media screen and (max-width: 1125px) { /* sp用スタイル */
+  .p-location__br{
+    display: block;
+  }
+
+  .p-location__map{
+    margin-top: 50px;
+  }
+
+  .p-location__mapItem{
+    width: 50vw;
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-location::before{
+    font-size: 80px;
+    top: 55px;
+  }
+
+  .p-location__mapItem{
+    width: 80vw;
+    height: 50vw;
+  }
+}
