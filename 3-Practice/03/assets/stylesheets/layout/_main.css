@@ -1,0 +1,17 @@
+@media screen and (min-width: 1126px) {
+  .l-main {
+    padding: 150px 0 90px 0;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .l-main {
+    padding-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .l-main {
+    padding-bottom: 8px;
+  }
+}

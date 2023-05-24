@@ -12,6 +12,7 @@
 // ==========================================================================*/
 @import 'layout/_body.css';
 @import 'layout/_header.css';
+@import 'layout/_main.css';
 
 /*// ==========================================================================
 // Object
@@ -34,6 +35,7 @@
 @import 'object/projects/_benefit.css';
 @import 'object/projects/_location.css';
 @import 'object/projects/_news.css';
+@import 'object/projects/_contact.css';
 
 /*// -----------------------------------------------------------------
 // Utility

@@ -1,0 +1,188 @@
+.p-contact {
+  position: relative;
+  margin-top: 150px;
+  overflow: hidden;
+}
+
+.p-contact::before {
+  position: absolute;
+  top: -2%;
+  left: 50%;
+  content: "CONTACT";
+  color: #efefef;
+  font-size: 160px;
+  font-family: "Montserrat-Bold";
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.p-contact__heading {
+  text-align: center;
+}
+
+.p-contact__headingTitle {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.p-contact__formWrap {
+  padding-top: 170px;
+  margin: 0 auto;
+  width: 550px;
+}
+
+.p-contact__formContentTitleWrap {
+  display: flex;
+}
+
+.p-contact__formContent + .p-contact__formContent {
+  margin-top: 25px;
+}
+
+.p-contact__itemTitle {
+  font-weight: bold;
+}
+
+.p-contact__sp {
+  width: 55%;
+  position: relative;
+}
+
+.p-contact__sp::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-10%);
+  content: "▼";
+  pointer-events: none;
+  color: #ccc;
+}
+
+.p-contact__formItem {
+  margin-top: 15px;
+  padding: 10px;
+  width: 88%;
+  height: 50px;
+}
+
+.p-contact__formItem--select {
+  margin-top: 15px;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  appearance: none;
+}
+
+.p-contact__formiItem--message {
+  width: 102%;
+  height: 80px;
+}
+
+.p-contact__formItem:hover {
+  opacity: 0.6;
+}
+
+.p-contact__formSelect:hover {
+  opacity: 0.6;
+}
+
+.p-contact__badge {
+  background-color: #DB320B;
+  color: #fff;
+  width: 65px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: lighter;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.p-contact__formBtnWrap {
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  font-weight: normal;
+}
+
+.p-contact__formButton {
+  width: 350px;
+  height: 80px;
+  text-align: center;
+  background-color: #DB320B;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+
+.p-contact__error {
+  display: none;
+  margin-top: 10px;
+  font-size: 10px;
+  color: #DB320B
+}
+
+input:invalid:focus + .p-contact__error {
+  display: block;
+}
+
+@media screen and (max-width: 1125px) { /* sp用スタイル */
+  .p-contact__formWrap {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-contact {
+    padding: 0 7% 30px;
+  }
+
+  .p-contact::before {
+    font-size: 80px;
+    top: 0;
+  }
+
+  .p-contact__headingTitle {
+    font-size: 4vw;
+  }
+
+  .p-contact__formWrap {
+    margin: 10% 0 0 0;
+    width: 90%;
+  }
+
+  .p-contact__formContent {
+    font-size: 3vw;
+    font-weight: normal;
+  }
+
+  .p-contact__formContentTitleWrap {
+    font-size: 3vw;
+  }
+
+  .p-contact__formItem {
+    height: 10%;
+  }
+
+  .p-contact__formSelect {
+    padding: 0 10px;
+  }
+
+  .p-contact__formiItem--message {
+    width: 110%;
+  }
+
+  .p-contact__formBtnWrap {
+    width: 110%;
+    margin-top: 30px;
+  }
+
+  .p-contact__formButton {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: normal;
+  }
+}
