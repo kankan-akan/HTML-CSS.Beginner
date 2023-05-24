@@ -1,0 +1,17 @@
+.l-footer {
+  margin: 0 auto;
+  padding: 30px 6%;
+  max-width: 1550px;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+
+.l-footer__text {
+  text-align: right;
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-footer__text {
+    font-size: 2vw;
+  }
+}
