@@ -4,7 +4,7 @@
 
 .p-work__image {
   margin: 0 auto;
-  height: 100px;
+  height: 75px;
 }
 
 .p-work__listWrap {
@@ -21,7 +21,7 @@
 }
 
 .p-work__listText {
-  margin-top: 20px;
+  margin-top: 15px;
   color: #778899;
 }
 
@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px 60px;
+    gap: 40px 60px;
   }
 }
 
