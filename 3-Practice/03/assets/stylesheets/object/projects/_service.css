@@ -1,5 +1,5 @@
 .p-service {
-  margin: 200px 40px;
+  margin: 200px 40px 0 40px;
 }
 
 .p-serviceTop {
@@ -104,7 +104,7 @@
 
   .p-service__contentWrap:nth-child(even) .p-service__img--bottom {
     position: relative;
-    left: -3%;
+    left: -6%;
     z-index: 2;
   }
 }

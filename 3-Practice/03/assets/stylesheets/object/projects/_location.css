@@ -1,12 +1,11 @@
-.p-location{
+.p-location {
   position: relative;
-  padding-top: 100px;
   overflow: hidden;
 }
 
-.p-location::before{
+.p-location::before {
   position: absolute;
-  top: 50px;
+  top: -10%;
   left: 50%;
   content: "LOCATION";
   color: #efefef;
@@ -16,52 +15,66 @@
   z-index: -2;
 }
 
-.p-location__content{
+.p-location__content {
   text-align: center;
 }
 
-.p-location__contentTitle{
+.p-location__contentTitle {
   color: #AD7F00;
 }
 
-.p-location__contentText{
+.p-location__contentText {
   margin-top: 10px;
 }
 
-.p-location__map{
+.p-location__map {
   margin-top: 55px;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
-.p-location__mapItem{
+.p-location__mapItem {
   width: 900px;
   height: 400px;
 }
 
-@media screen and (max-width: 1125px) { /* sp用スタイル */
-  .p-location__br{
+@media screen and (max-width: 1125px) {
+  .p-location__br {
     display: block;
   }
 
-  .p-location__map{
-    margin-top: 50px;
+  .p-location__map {
+    margin-top: 70px;
   }
 
-  .p-location__mapItem{
+  .p-location__mapItem {
     width: 50vw;
     height: 30vw;
   }
 }
 
+@media screen and (min-width: 796px) {
+  .p-location {
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 795px) { /* sp用スタイル */
-  .p-location::before{
-    font-size: 80px;
-    top: 55px;
+  .p-location {
+    margin-top: 80px;
   }
 
-  .p-location__mapItem{
+  .p-location::before {
+    font-size: 80px;
+    top: -5%;
+  }
+
+  .p-location__content {
+    padding-top: 25px;
+  }
+
+  .p-location__mapItem {
     width: 80vw;
     height: 50vw;
   }

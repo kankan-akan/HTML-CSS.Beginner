@@ -1,10 +1,10 @@
 .p-member {
-  margin: 0 auto;
+  margin: 200px auto 0;
   padding: 50px 80px;
   max-width: 1540px;
   background-image: url("../../../images/common/member-bg.png");
   background-position: center;
-  object-fit: cover;
+  background-size: cover;
 }
 
 .p-memberTop {
